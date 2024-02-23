@@ -18,7 +18,7 @@ pipeline {
                 # TODO fill out the path to conda here
                 python -m venv mlip_lab
                 source mlip_lab/bin/activate
-                pip install pytest numpy pandas scikit-learn -c conda-forge
+                pip install pytest numpy pandas scikit-learn
 
                 # TODO Complete the command to run pytest
                 pytest test_utility.py
