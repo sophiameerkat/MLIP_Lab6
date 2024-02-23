@@ -16,12 +16,12 @@ pipeline {
                 echo 'Test Step: We run testing tool like pytest here'
 
                 # TODO fill out the path to conda here
-                python -m venv mlip_lab
+                python3 -m venv mlip_lab
                 source mlip_lab/bin/activate
-                pip install pytest numpy pandas scikit-learn
+                pip3 install pytest numpy pandas scikit-learn
 
                 # TODO Complete the command to run pytest
-                pytest test_utility.py
+                pytest
 
                 # echo 'pytest not runned'
                 # exit 1 #comment this line after implementing Jenkinsfile
